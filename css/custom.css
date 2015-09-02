@@ -1,0 +1,24 @@
+li.name h1 img{
+	max-height: 3em;
+}
+nav.top-bar{
+	background-color: #7676b3;
+}
+section.top-bar-section li:not(.has-form) a:not(.button){
+	background-color: #7676b3;
+}
+section.top-bar-section li:not(.has-form) a:not(.button):hover{
+	background-color: #10104d;
+}
+section.top-bar-section li.active:not(.has-form) a:not(.button){
+	background-color: #313983;
+}
+section.top-bar-section li.active:not(.has-form) a:not(.button):hover{
+	background-color: #10104d;
+}
+section.top-bar-section .dropdown li:hover:not(.has-form):not(.active) > a:not(.button){
+	background-color: #10104d;
+}
+section.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button){
+	background-color: #7676b3;
+}
