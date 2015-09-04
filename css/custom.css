@@ -1,10 +1,19 @@
+@font-face {
+    font-family: setaritFont;
+    src: url(../fonts/setarit.otf);
+}
+body *{
+	font-family: setaritFont;
+}
 div.content{
 	padding-top: 45px;
 }
 div.hero{
 	background-color: #1e2247;	
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
-div.hero h1{
+div.hero *{
 	color: white;
 }
 li.name h1 img{
