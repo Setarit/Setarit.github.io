@@ -57,3 +57,11 @@ div#GitHub a{
 	padding: 0.55em;
 	border-radius: 0.5em;
 }
+div.kbHeader img{
+	width: 100%;
+	max-height: 3em;
+	margin-bottom: 1em;
+}
+div.kbList ul{
+	list-style: none;
+}
