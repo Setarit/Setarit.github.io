@@ -3,10 +3,16 @@
     src: url(../fonts/setarit.otf);
 }
 body *{
-	font-family: setaritFont;
+	font-family: setaritFont;    
 }
 div.content{
-	padding-top: 45px;
+    background-color: #F5F5FF;
+}
+div.row{
+    background-color: white;
+}
+div#heroContent{
+    background-color: transparent;
 }
 div.hero{
 	background-color: #1e2247;	
@@ -26,6 +32,10 @@ div.hero li img{
 }
 li.name h1 img{
 	max-height: 2.6em;
+    vertical-align: baseline;
+}
+div.contain-to-grid{
+    background-color: #7676B3;
 }
 nav.top-bar{
 	background-color: #7676b3;
