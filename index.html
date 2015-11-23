@@ -16,6 +16,18 @@
   	<script type="text/javascript" src="js/ga.js"></script>
 </head>
 <body>
+<!-- required for facebook-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=931874676860062";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- end facebook -->
+
+
 	<!-- nav bar -->
 	<div class="fixed">
 		<nav class="top-bar" data-topbar role="navigation">
@@ -43,20 +55,28 @@
 			<div class="hero">				
                 <div class="row" id="heroContent">
                     <div class="large-6 columns">
-                        <img src="img/backupAppPhoneCombine.png" alt="screenshot of the backup application" />
+                        <img src="img/backup_combine_v2.png" alt="screenshot of the backup application" />
                     </div>
                     <div class="large-6 columns">
-                        <h1>Now available for Android!</h1>
+                        <h1>Version 2 now available for Android!</h1>
                         <ul>
                             <li><img src="img/Available_icon_white.png" alt="Feature tick" />Periodically creates a backup from your device</li>
                             <li><img src="img/Available_icon_white.png" alt="Feature tick" />Multiple cloud providers available</li>
                             <li><img src="img/Available_icon_white.png" alt="Feature tick" />Easy configuration</li>
                             <li><img src="img/Available_icon_white.png" alt="Feature tick" />Support</li>
                             <li><img src="img/Available_icon_white.png" alt="Feature tick" />Frequent updates</li>
+                            <li><img src="img/Available_icon_white.png" alt="Feature tick" />Selective File Support (SFS)</li>
                         </ul>
+                        <h5 class="pull-right">
+	                        <strong>
+	                        	<a href="backup.html">More info...</a>
+	                        </strong>                        	
+                        </h5>
+                        <br/>
                         <a href="https://play.google.com/store/apps/details?id=com.setarit.backup">
                             <img alt="Get it on Google Play" src="https://developer.android.com/images/brand/en_generic_rgb_wo_60.png" />
                         </a>
+
                     </div>
                 </div>
 			</div>
@@ -76,15 +96,18 @@
 					<h4>Contact</h4>
 					<p>You can contact us in various ways:</p>
 					<div class="row">
-						<div class="small-6 columns">
+						<div class="small-4 columns">
 							<a href="https://twitter.com/intent/tweet?screen_name=Setarit" class="twitter-mention-button" data-size="large" data-dnt="true">Tweet to @Setarit</a>
 							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 						</div>
-						<div id="GitHub" class="small-6 columns">
+						<div id="GitHub" class="small-4 columns">
 							<a href="https://github.com/Setarit">
 								<img src="img/GitHub-Mark.png"/>
 								On GitHub
 							</a>							
+						</div>							
+						<div class="small-4 columns">
+								<div class="fb-like" data-href="http://www.facebook.com/setarit" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
 						</div>
 					</div>
 
@@ -94,8 +117,7 @@
 			<!-- END contact section -->
 		</div>
 	</div>	
-	<!-- END content -->
-	
+	<!-- END content -->	
 	<!-- Scripts -->
 	<script src="js/vendor/jquery.js"></script>
 	<script src="js/vendor/jquery-ui.min.js"></script>
