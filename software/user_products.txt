@@ -1,0 +1,2 @@
+BackUp -> http://setarit.com/img/backup_icon_64x64.jpg -> http://www.setarit.com/backup.html
+BlueTweak -> http://setarit.com/img/bluetweak_icon.png -> http://www.setarit.com/bluetweak.html
