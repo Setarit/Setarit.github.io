@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>BlueTweak</title>
+    <meta name="description" content="BlueTweak by Setarit">
+    <meta name="author" content="Setarit">
+
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/jquery-ui.min.js"></script>
+    <link rel="shortcut icon" href="img/square_flatLogoTest_noSlogan.png">
+    <script src="js/vendor/modernizr.js"></script>
+    <script type="text/javascript" src="js/ga.js"></script>
+
+    <!--Slick-->
+    <link rel="stylesheet" type="text/css" href="js/vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="js/vendor/slick/slick-theme.css" />
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slickShow').slick({
+                autoplay: true,
+                dots: true,
+                arrows: false,
+                fade: true,
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- nav bar -->
+    <div class="contain-to-grid sticky">
+        <nav class="top-bar" data-topbar role="navigation">
+            <ul class="title-area">
+                <li class="name">
+                    <h1>
+                        <a href="index.html" style="padding: 0px;">
+                            <img src="img/rectangle_flatLogoTest_noSlogan.png" alt="Setarit Logo" />
+                        </a>
+                    </h1>
+                </li>
+            </ul>
+
+            <section class="top-bar-section">
+                <!-- actual navigation -->
+                <ul class="left">
+                    <li class="active"><a href="#">BlueTweak</a></li>
+                </ul>
+            </section>
+        </nav>
+    </div>
+    <!-- END nav bar -->
+    <!-- content -->
+    <div class="content">
+        <div class="hero" style="background-color:#5d5d9a">
+            <h1 style="text-align:center">BlueTweak - Windows 10 tweaks within reach</h1>
+
+            <div class="row" style="background-color:#5d5d9a">
+                <!--Navigation-->
+                <div class="small-4 columns">
+                    <ul style="background-color:#7676b3; text-align:center;">
+                        <li class="hoverColor">
+                            <a href="#download">Download</a>
+                        </li>
+                        <li class="hoverColor">
+                            <a href="#info">Features</a>
+                        </li>
+                        <li class="hoverColor">
+                            Documentation
+                        </li>
+                    </ul>
+                </div>
+                <!--End navigation-->
+                <img src="img/bluetweak/arrowInBlue.jpg" alt="arrow left" class="small-2 columns show-for-medium-up" />
+                <h4 style="padding-top:3%" class="small-6 columns">Select one of the categories to start tweaking!</h4>                
+            </div>            
+        </div>
+        <div class="row">
+            <section id="download">
+                <h2 style="text-align: center">Download BlueTweak</h2>
+                <div class="row">
+                    <div class="small-4 columns">
+                        <a href="" class="button success"><h4 style="color:white">Download for Windows 10</h4></a>
+                        <p>BlueTweak is only available for Windows 10</p>
+                    </div>                    
+                    <div class="slickShow small-6 columns" >
+                        <div>
+                            <img src="img/bluetweak/apps.JPG" alt="Manage your apps" />  
+                            <p style="text-align: center; color:white; background-color:lightslategray">Manage your apps</p>                      
+                        </div>
+                        <div>
+                            <img src="img/bluetweak/toolbox.JPG" alt="Start a network monitor" />
+                            <p style="text-align: center; color:white; background-color:lightslategray">Start a network monitor</p>
+                        </div>
+                        <div>
+                            <img src="img/bluetweak/explorer.JPG" alt="Configure Explorer" /> 
+                            <p style="text-align: center; color:white; background-color:lightslategray">Configure Explorer</p>                       
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="info">
+                <h2 style="text-align:center">Features</h2>
+                <h5 style="text-align:center" class="subheader">What BlueTweak can add to your day</h5>
+                <div class="row">
+                    <div class="small-4 columns" style="margin-top:-10%">
+                        <img style="padding:40%" src="img/glyph_explorer.png" alt="Explorer"/>
+                        <p style="text-align: center; margin-top:-40%">Tweak Explorer behaviour</p>
+                    </div>
+                    <div class="small-4 columns" style="margin-top:-10%">
+                        <img style="padding:40%" src="img/glyph_dashboard.png" alt="Network" />
+                        <p style="text-align: center; margin-top:-40%">Meter your network usage</p>
+                    </div>
+                    <div class="small-4 columns" style="margin-top:-10%">
+                        <img style="padding:40%" src="img/glyph_apps.png" alt="Apps" />
+                        <p style="text-align: center; margin-top:-40%">Permanently remove Windows 10 apps</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+    <!-- END content -->
+    <!-- Scripts -->    
+    <script src="js/vendor/fastclick.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script type="text/javascript">
+        $(document).foundation();
+    </script>
+    <script type="text/javascript">
+        $("li.hoverColor").hover(function () {
+            $(this).css("background-color", "#5d5d9a");
+        });
+        $("li.hoverColor").mouseleave(function () {
+            $(this).css("background-color", "#7676b3");
+        });
+    </script>
+    <script type="text/javascript" src="js/vendor/slick/slick.min.js"></script>
+
+</body>
+</html>
