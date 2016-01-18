@@ -8,7 +8,7 @@
         <beforeApplicationStartup />
       </update>
     </subscription>
-    <deploymentProvider codebase="http://www.setarit.com/bin/bluetweak.exe/BlueTweak.application" />
+    <deploymentProvider codebase="http://www.setarit.com/bin/bluetweak/BlueTweak.application" />
   </deployment>
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
     <framework targetVersion="4.5.2" profile="Full" supportedRuntime="4.0.30319" />
@@ -21,7 +21,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>43anSWEnMaMVqoYT3pT+izkbNW5uzYqI6/w1vsa0sjo=</dsig:DigestValue>
+        <dsig:DigestValue>o9T2IzUB8G0Z8e50p0zU3uImzfofoB1f6gLZ1mpRcNU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
