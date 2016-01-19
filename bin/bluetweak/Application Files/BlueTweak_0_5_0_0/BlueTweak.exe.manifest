@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
   <asmv1:assemblyIdentity name="BlueTweak.exe" version="0.5.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
-  <description asmv2:iconFile="Resources\icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <description asmv2:iconFile="Resources\icon.ico" asmv2:publisher="Setarit" asmv2:product="BlueTweak" asmv2:supportUrl="http://www.setarit.com/bluetweak.html" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
     <assemblyIdentity name="BlueTweak" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
     <commandLine file="BlueTweak.exe" parameters="" />
   </entryPoint>
+  <co.v1:useManifestForTrust xmlns="urn:schemas-microsoft-com:asm.v1" />
   <trustInfo>
     <security>
       <applicationRequestMinimum>
@@ -55,14 +56,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BlueTweak.exe" size="1138688">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BlueTweak.exe" size="1146368">
       <assemblyIdentity name="BlueTweak" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>twfLZ2xQo72U0Hrz5iTe0Sk9AiZv7c3G15QjZ/vRnoY=</dsig:DigestValue>
+        <dsig:DigestValue>oKYfMWmMIyBi9HPPaceKuB8YkyOWfko7goNiBPPfsnc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -102,13 +103,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="BlueTweak.exe.config" size="555">
+  <file name="BlueTweak.exe.config" size="563">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>avjbHpPDarEXRsVDy1g2aior5I+v+FT4JSG7HgzuZy8=</dsig:DigestValue>
+      <dsig:DigestValue>fLhM2dS0L6e3+kqUET+O5YUmAh7cu3iyFimyZbGfzG8=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Resources\icon.ico" size="370070">
