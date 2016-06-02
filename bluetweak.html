@@ -32,26 +32,23 @@
 </head>
 <body>
     <!-- nav bar -->
-    <div class="contain-to-grid sticky">
-        <nav class="top-bar" data-topbar role="navigation">
-            <ul class="title-area">
-                <li class="name">
-                    <h1>
-                        <a href="index.html" style="padding: 0px;">
-                            <img src="img/rectangle_flatLogoTest_noSlogan.png" alt="Setarit Logo" />
-                        </a>
-                    </h1>
-                </li>
-            </ul>
-
-            <section class="top-bar-section">
-                <!-- actual navigation -->
-                <ul class="left">
-                    <li class="active"><a href="#">BlueTweak</a></li>
-                </ul>
-            </section>
-        </nav>
-    </div>
+    <nav class="top-bar">
+      <div class="top-bar-title">
+  			<span data-responsive-toggle="menu" data-hide-for="medium">
+      		<button type="button" data-toggle>
+  					<span class="menu-icon light"></span>
+  				</button>
+      	</span>
+  			<a href="http://www.setarit.com">
+  				<img src="img/rectangle_flatLogoTest_noSlogan.png" alt="Setarit Logo" />
+  			</a>
+  		</div>
+  		<div class="top-bar-left" id="menu">
+  			<ul class="dropdown menu" data-dropdown-menu>
+          <li class="active"><a href="#">BlueTweak</a></li>
+  			</ul>
+  		</div>
+  	</nav>
     <!-- END nav bar -->
     <!-- content -->
     <div class="content">
@@ -75,8 +72,8 @@
                 </div>
                 <!--End navigation-->
                 <img src="img/bluetweak/arrowInBlue.jpg" alt="arrow left" class="small-2 columns show-for-medium-up" />
-                <h4 style="padding-top:3%" class="small-6 columns">Select one of the categories to start tweaking!</h4>                
-            </div>            
+                <h4 style="padding-top:3%" class="small-6 columns">Select one of the categories to start tweaking!</h4>
+            </div>
         </div>
         <div class="row">
             <section id="download">
@@ -85,19 +82,19 @@
                     <div class="small-4 columns">
                         <a href="bin/bluetweak/setup.exe" class="button success"><h4 style="color:white">Download for Windows 10</h4></a>
                         <p>BlueTweak is only available for Windows 10</p>
-                    </div>                    
+                    </div>
                     <div class="slickShow small-6 columns" >
                         <div>
-                            <img src="img/bluetweak/apps.JPG" alt="Manage your apps" />  
-                            <p style="text-align: center; color:white; background-color:lightslategray">Manage your apps</p>                      
+                            <img src="img/bluetweak/apps.JPG" alt="Manage your apps" />
+                            <p style="text-align: center; color:white; background-color:lightslategray">Manage your apps</p>
                         </div>
                         <div>
                             <img src="img/bluetweak/toolbox.JPG" alt="Start a network monitor" />
                             <p style="text-align: center; color:white; background-color:lightslategray">Start a network monitor</p>
                         </div>
                         <div>
-                            <img src="img/bluetweak/explorer.JPG" alt="Configure Explorer" /> 
-                            <p style="text-align: center; color:white; background-color:lightslategray">Configure Explorer</p>                       
+                            <img src="img/bluetweak/explorer.JPG" alt="Configure Explorer" />
+                            <p style="text-align: center; color:white; background-color:lightslategray">Configure Explorer</p>
                         </div>
                     </div>
                 </div>
@@ -132,7 +129,7 @@
                         <ul>
                             <li><a href="#sixfolders">Show user folders in 'This PC' window</a></li>
                             <li><a href="#onedrive">Show the OneDrive folder within the Explorer</a></li>
-                        </ul>                        
+                        </ul>
                     </li>
                     <li><a href="#toolbox">Toolbox</a></li>
                     <li><a href="#rate">Rate this software or suggest features</a></li>
@@ -140,7 +137,7 @@
                 <h3 id="apps">Manage apps</h3>
                 <div class="row">
                     <div class="small-6 medium-6 columns">
-                        <img src="img/bluetweak/apps_2.JPG" alt="Manage your apps" />  
+                        <img src="img/bluetweak/apps_2.JPG" alt="Manage your apps" />
                     </div>
                     <div class="small-6 medium-6 columns">
                         <p>In this window your are able to select the apps you want to uninstall from your computer.</p>
@@ -150,7 +147,7 @@
                 <h3 id="explorer">Explorer behaviour</h3>
                 <div class="row">
                     <div class="small-6 medium-6 columns">
-                        <img src="img/bluetweak/explorer.JPG" alt="Configure Explorer" /> 
+                        <img src="img/bluetweak/explorer.JPG" alt="Configure Explorer" />
                     </div>
                     <div class="small-6 medium-6 columns">
                         <h4 id="sixfolders">Show user folders in 'This PC' window</h4>
@@ -158,8 +155,8 @@
                         The six user folders are Desktop, Documents, Videos, Music, Pictures and Download.</p>
                         <strong>Please not that the changes take place after you reopen the Explorer window</strong>
                         <a href="img/bluetweak/ex_folders_gone.JPG" alt="Folders invisible">Click here to see an example without the six folders</a>
-                        
-                        
+
+
                         <h4 id="onedrive">Show the OneDrive folder within the Explorer</h4>
                         <p>This option does not uninstall OneDrive from your computer, it only removes the icon from the sidebar of your Explorer window.</p>
                         <strong>Please not that the changes take place after you reopen the Explorer window</strong>
@@ -187,9 +184,9 @@
         </div>
     </div>
     <!-- END content -->
-    <!-- Scripts -->    
+    <!-- Scripts -->
     <script src="js/vendor/fastclick.js"></script>
-    <script src="js/foundation.min.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
     <script type="text/javascript">
         $(document).foundation();
     </script>
