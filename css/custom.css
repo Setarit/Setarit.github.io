@@ -9,6 +9,9 @@ html, body{
 body *{
 	font-family: setaritFont;
 }
+p{
+  font-size: 16px;
+}
 /* navbar logo */
 .navbar-brand {
   padding: 0px;

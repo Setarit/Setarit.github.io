@@ -2,45 +2,52 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>BackUp</title>
     <meta name="description" content="Setarit BackUp">
     <meta name="author" content="Setarit">
+  	<!-- Chrome, Firefox OS and Opera -->
+  	<meta name="theme-color" content="#1e2247">
+  	<!-- Windows Phone -->
+  	<meta name="msapplication-navbutton-color" content="#1e2247">
 
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" type="text/css" href="css/custom.css">
-    <link rel="stylesheet" href="css/jquery-ui.min.css">
-    <link rel="shortcut icon" href="img/square_flatLogoTest_noSlogan.png">
-    <script src="js/vendor/modernizr.js"></script>
-    <script type="text/javascript" src="js/ga.js"></script>
+  	<link rel="stylesheet" href="css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="css/custom.css">
+  	<link rel="stylesheet" href="css/jquery-ui.min.css">
+  	<link rel="shortcut icon" href="img/square_flatLogoTest_noSlogan.png">
+  	<script type="text/javascript" src="js/ga.js"></script>
 
 </head>
 <body>
-    <!-- nav bar -->
-    <nav class="top-bar">
-      <div class="top-bar-title">
-  			<span data-responsive-toggle="menu" data-hide-for="medium">
-      		<button type="button" data-toggle>
-  					<span class="menu-icon light"></span>
-  				</button>
-      	</span>
-  			<a href="http://www.setarit.com">
-  				<img src="img/rectangle_flatLogoTest_noSlogan.png" alt="Setarit Logo" />
-  			</a>
-  		</div>
-  		<div class="top-bar-left" id="menu">
-  			<ul class="dropdown menu" data-dropdown-menu>
-          <li class="active"><a href="#">BackUp</a></li>
-          <li><a href="#changelog">Changelog</a></li>
-          <li><a href="#upgrading">Upgrading</a></li>
-  			</ul>
-  		</div>
-  	</nav>
-    <!-- END nav bar -->
+  <!-- nav bar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://www.setarit.com"><img alt="Setarit" src="img/rectangle_flatLogoTest_noSlogan.png" ></a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class=""><a href="index.html">Home</a></li>
+          <li class=""><a href="KB/knowledgebase.html">Knowledge Base</a></li>
+          <li class="active"><a href="backup.html">Backup</a></li>
+          <li class=""><a href="https://quietticket.com">QuietTicket</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
+  <!-- END nav bar -->
     <!-- content -->
-    <div class="content">
-        <div class="row">
-            <section class="leftPadding">
+    <div class="container">
+            <section class="leftPadding cardbox">
                 <h2 id="features">Features</h2>
                 <ul class="features">
                     <li><img src="img/Available_icon_green.png" alt="Feature tick" class="grow" />Monyhly, weekly or daily backups</li>
@@ -51,92 +58,45 @@
                     <li><img src="img/Available_icon_green.png" alt="Feature tick" class="grow"/>Selective File Support (SFS)</li>
                 </ul>
             </section>
-
-
-            <section id="changelog" class="changeLog leftPadding">
+            <br />
+            <section id="changelog" class="changeLog leftPadding cardbox">
                 <h2>Changelog</h2>
-                <ul class="changeLogHover">
-                    <li class="small-3 columns">
-                        <figure>
-                            <img src="img/changelog/v1.png"/>
-                            <figcaption>
-                                <h2>Version 1</h2>
-                                <p>Initial release</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="small-3 columns">
-                        <figure>
-                            <img src="img/changelog/v1_1.png"/>
-                            <figcaption>
-                                <h2>Version 1.1</h2>
-                                <p>Support for mobile networks</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="small-3 columns">
-                        <figure>
-                            <img src="img/changelog/v1_3.png"/>
-                            <figcaption>
-                                <h2>Version 1.3</h2>
-                                <p>
-                                   * More backup intervals<br/>
-                                   * Better support for tablets
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="small-3 columns">
-                        <figure>
-                            <img src="img/changelog/v2.png"/>
-                            <figcaption>
-                                <h2>Version 2</h2>
-                                <p>* Smaller memory footprint<br/>
-                                * Selective File Support (SFS)<br/>
-                                * Better support for large files
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>
-                <!-- Second row -->
-                <ul class="changeLogHover">
-                    <li class="small-3 columns">
-                        <figure>
-                            <img src="img/changelog/v2_1.png" />
-                            <figcaption>
-                                <h2>Version 2.1</h2>
-                                <p>
-                                    * Override previous backups<br />
-                                    * Various bugfixes
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="small-3 columns">
-                        <figure>
-                            <img src="img/changelog/futur.png" />
-                            <figcaption>
-                                <h2>?</h2>
-                                <p>
-                                    Once there is a next release it will be placed here :-)
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="small-3 columns">
-
-                    </li>
-                    <li class="small-3 columns">
-
-                    </li>
-
+                <ul>
+                  <li><strong>v1.0</strong>
+                    <ul>
+                      <li>Initial release</li>
+                    </ul>
+                  </li>
+                  <li><strong>v1.1</strong>
+                    <ul>
+                      <li>Support for mobile networks</li>
+                    </ul>
+                  </li>
+                  <li><strong>v1.3</strong>
+                    <ul>
+                      <li>More backup intervals</li>
+                      <li>Better support for tablets</li>
+                    </ul>
+                  </li>
+                  <li><strong>v2.0</strong>
+                    <ul>
+                      <li>Smaller memory footprint</li>
+                      <li>Selective File Support (SFS)</li>
+                      <li>Better support for large files</li>
+                    </ul>
+                  </li>
+                  <li><strong>v2.1</strong>
+                    <ul>
+                      <li>Override previous backups</li>
+                      <li>Various bugfixes</li>
+                    </ul>
+                  </li>
                 </ul>
             </section>
             <br/>
-            <section id="upgrading" class="leftPadding">
+            <section id="upgrading" class=" cardbox leftPadding">
                 <h2>Upgrading from v1 to v2</h2>
-                You will receive the update automatically by Google Play.
+                <p>You will receive the update automatically by Google Play.</p>
                 <h3>Things you need to do</h3>
                 <p>
                 As the core of the app improved and changed dramatically, we could not save all your preferences.<br/>
@@ -144,7 +104,6 @@
                 The backup interval and other settings are saved and reconfigured for you during the update process.
                 </p>
             </section>
-        </div>
     </div>
     <!-- END content -->
     <!-- Scripts -->
