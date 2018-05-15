@@ -24,6 +24,15 @@ p{
   margin-bottom: 0px;
 }
 /* end navbar logo*/
+/* navbar shadow */
+.navbar {
+  border: none;
+  border-radius: 0px;
+  -webkit-box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.4);
+}
+/* END navbar shadow */
 section.cardbox{
   padding-left: 15px;
   padding-right: 15px;
