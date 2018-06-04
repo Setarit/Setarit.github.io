@@ -9,8 +9,16 @@ html, body{
 body *{
 	font-family: setaritFont;
 }
+body{
+  padding-top: 50px;
+}
 p{
   font-size: 16px;
+}
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
 /* navbar logo */
 .navbar-brand {
@@ -50,7 +58,6 @@ section.cardbox > h2{
   margin-right: 0px;
 }
 .welcome-full-window{
-  margin-top: -50px;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -145,9 +152,8 @@ section.changeLog{
 section.leftPadding{
 	padding-left: 1em;
 }
+
 /* Changelog image effects */
-
-
 .changeLogHover {
 	display: inline-block;
     position:relative;
@@ -215,25 +221,10 @@ section.leftPadding{
     transform:rotateY(0)
 }
 
-/* media queries
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .welcome-full-window p {
-    font-size: 60px;
-  }
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width:1200px) {
-
-}
-
 /* CSS navbar color */
+.navbar{
+  z-index: 100;
+}
 .navbar-default {
   background-color: #60609d;
   border-color: #313983;
@@ -417,3 +408,106 @@ section.leftPadding{
 	}
 }
 /* End scroll button */
+/* Settler page */
+.settler-hero{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background: linear-gradient(to bottom right, #0D3750, #8EA7AC);
+  background-image: url('../img/settler/sky.png');
+  background-size: cover;
+  background-color: #375b6f;
+  color: #FFF;
+  overflow: hidden;
+}
+.settler-hero > img {
+  position: absolute;
+  bottom: 0;
+  left:0;
+  right:0;
+  margin: 0 auto;
+  max-width: 50%;
+  z-index: 3;
+}
+.settler-hero-header {
+  font-size: 100px;
+}
+.settler-hero-subheader{
+  font-size: 50px;
+}
+.settler-hero-text{
+  margin-top: 50px;
+}
+#settler-hero-download-button{
+  text-decoration: none;
+  color: #FFF;
+  background-color: #60609D;
+  font-size: 3vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  border-radius: 10px;
+  border: 1px solid #313983;
+}
+#settler-hero-download-button:hover{
+  background-color: #5D5D9A;
+}
+.settler-hero > .row {
+  background-color: transparent;
+}
+.settler-hero > .row > div:nth-child(1){
+  z-index: 4;
+}
+.settler-hero-image-container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: skew(5deg, -5deg);
+}
+.settler-hero-image-container > img{
+  -webkit-box-shadow: 7px -8px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 7px -8px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 7px -8px 10px 0px rgba(0,0,0,0.75);
+}
+#settler-top-screenshot{
+  position: absolute;
+  margin-top: 50vh;
+  max-width: 40vw;
+  z-index: 2;
+}
+#settler-back-screenshot{
+  position: absolute;
+  margin-top: 40vh;
+  margin-left: 5vw;
+  z-index: 1;
+}
+.settler-feature-image{
+  max-width: 20%;
+}
+/* END Settler page */
+
+/* media queries
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .welcome-full-window p {
+    font-size: 60px;
+  }
+  .settler-hero > img {
+    max-width: 50%;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .settler-hero > img {
+    max-width: 25%;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:1200px) {
+  .settler-hero > img {
+    max-width: 20%;
+  }
+}
